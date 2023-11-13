@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+    <header>
+        <div class="container mt-5 border-top-0 border-start-0 border-end-0 border-color  py-4">
+            <h3 class="text-color font-arial fw-bold fs-2 ms-4 ">BookMarker</h3>
+        </div>
+    </header>
+    <section>
+        <div class="container text-center w-75 mt-3 rounded light-bg py-5">
+            <h4 class="fw-bold font-arial fs-3">Bookmark your favorite sites</h4>
+            <div class="w-75 m-auto mt-5">
+
+                <div class="name">
+                    <label for="siteName" class="fw-bold fs-5">Site Name</label>
+                    <input type="text" id="siteName" class="form-control outline-color mt-2" placeholder="Bookmark Name">
+                    <div class="name-error alert alert-danger py-2 mt-3 fs-5 fw-bold d-none">
+                        This field is required
+                    </div>
+                </div>
+                <div class="url mt-3">
+                    <label for="siteUrl" class="fw-bold fs-5">Site Url</label>
+                    <input type="text" id="siteUrl" class="form-control outline-color mt-2" placeholder="Website URL">
+                    <div class="url-error alert alert-danger py-2 mt-3 fs-5 fw-bold d-none">
+                        This field is required
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <button class="submit shadow-hover btn btn-primary py-2 px-4">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-5" >
+        <div class="container" id="bookMarks">
+           
+        </div>
+    </section>
+    <footer class="mt-5">
+        <div class="container border-color border-start-0 border-bottom-0 border-end-0 py-3">
+
+            <p class="text-color font-arial fw-bold">© 2019 Bookmarker Inc.</p>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
